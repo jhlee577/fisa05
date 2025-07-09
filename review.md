@@ -139,3 +139,60 @@ match 변수 or 값:
         1. 모듈명.변수 or 모듈명.함수() 정도까지로 import 해서 사용하는 것을 권장(어디 출신인지 안 쓰고도 해당 함수와 변수, 클래스를 불러올 수 있지만 권장안함)
         2. 객체 지향 언어와 절차 지향 언어의 차이
         
+## 250709 파이썬 6일차
+- **Situation** – 상황
+    ***클래스에 대한 심층 학습***
+
+- **Task** – 과제
+궁금한 부분 질문하거나 직접 해결하기
+
+        1. 클래스 변수에 다차원 리스트(중첩 리스트) 사용했을 때 인스턴스 변수만 변경하고 싶어도 원본이 훼손됨
+            - 원인 : 클래스 변수의 다차원(중첩) 리스트 객체는 모든 인스턴스가 공유하기 때문
+            - 해결방법 : 깊은 복사(deepcopy)
+    ```
+        class Car:
+        color_template = ['white', 'black', ['blue', 'silver']]
+
+        def __init__(self, model, displacement, is_domestic):
+            self.model = model
+            self.displacement = displacement
+            self.is_domestic = is_domestic
+            import copy
+            self.color = copy.deepcopy(Car.color_template)
+    ```
+        
+- **Action** – 행동
+학습 내용 복습하기
+
+        1. 생략 가능한 정보는 디폴트 파라미터에 작성한다
+        즉 꼭 입력이 필요한 정보는 디폴트 값을 주지 않는다
+    ```
+        def __init__(self, account, name, password, balance=0)
+    ```
+        2. int, bool, str, float, list, tuple, range 등 파이썬 자체 제공 클래스 외에도 사용자가 직접 새로운 클래스 만들 수 있음
+        (함수도 클래스로 정의되어 있음, 파이썬은 클래스가 아닌 것이 없음)
+
+        3. 부모클래스의 __init__()을 재사용, super() 사용해서 부모클래스 호출
+    ```
+        def __init__(self, is_tuned: bool = False, *args, **kwargs):
+            super().__init__(*args, **kwargs)
+    ```
+
+        4. 
+        
+
+- **Result** – 결과
+아래 내용을 배움
+
+        1. 맹글링 - 파이썬에서 은닉성을 변칙처럼 구현
+        2. 오버로딩
+            - 클래스 내의 하나의 메소드가 여러개의 기능을 처리
+            - 파이썬은 오버로딩 x
+            - 연산자 오버로딩이라고 매직 메소드를 이용해서 눈속임
+        3. 오버라이딩
+             - 메소드를 재정의(덮어쓴다)
+                - 메소드 뿐 아니라 속성도 오버라이팅
+            - 부모한테 물려받은 메소드를 그대로 사용하지 않겠다는 의미
+                - 자식 클래스에서 부모에게 있던 메소드를 고쳐쓰는 법
+                - 상속이 되어야만 재정의 할 수 있다
+                - 상속받은 메소드와 동일한 이름이어야 함
