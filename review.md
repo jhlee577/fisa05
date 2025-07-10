@@ -179,7 +179,7 @@ match 변수 or 값:
     ```
 
         4. @property : 동작(함수)를 값(변수)처럼 사용하게 하는 데코레이터
-        @get_pw.setter : @ property 의 짝궁인 setter
+            @get_pw.setter : @ property 의 짝궁인 setter
     
         
 
@@ -198,3 +198,80 @@ match 변수 or 값:
                 - 자식 클래스에서 부모에게 있던 메소드를 고쳐쓰는 법
                 - 상속이 되어야만 재정의 할 수 있다
                 - 상속받은 메소드와 동일한 이름이어야 함
+
+## 250710 데이터분석 1일차
+- **Situation** – 상황
+    ***NumPy에 대한 학습***
+
+- **Task** – 과제
+궁금한 부분 질문하거나 직접 해결하기
+
+        1. reshape
+        배열의 총 원소 수는 그대로 유지한 채, 배열의 차원(shape) 을 새롭게 바꿈
+    ```
+        arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+        reshaped3 = arr.reshape(3, 1, -1)
+
+        reshaped3.shape: (3, 1, 4)
+        [[[ 1  2  3  4]]
+
+        [[ 5  6  7  8]]
+
+        [[ 9 10 11 12]]]
+
+    ```
+
+        2. np.nan, np.inf
+            - Not a Number : 브로드캐스팅이 가능한, None을 의미하는 넘파이의 객체
+            - infinite : 브로드캐스팅이 가능한, 결측치와는 구분된 처리하는 과정에서 잘못된 값 등을 채워넣기 위한 넘파이 객체
+        
+- **Action** – 행동
+학습 내용 복습하기
+
+        1. axis
+            np.append(arr, values, axis)
+            1. 2차원일 때
+                - 행 : axis=0
+                - 열 : axis=1
+            2. 3차원일 때
+                - 열 : axis=2
+        2. 브로드캐스팅
+            Numpy에서 shape가 다른 배열 간에도 산술 연산이 가능하게 하는 메커니즘
+        3. 복원, 비복원 추출
+            
+    ```     
+             a = np.array([1, 2, 3, 4, 5])
+             np.random.choice(a, size=4, replace=True) #복원
+
+    ```
+    ```
+             a = np.array([1, 2, 3, 4, 5])
+             np.random.choice(a, 4, replace=False)#비복원
+                
+    ```
+
+- **Result** – 결과
+아래 내용을 배움
+
+        1. str으로 된 자료가 있으면 나머지도 str으로 변환하기 때문에 두 번째줄 코드처럼 str으로 된 자료가 있으면 dtype으로 형변환 명시
+    ```
+        np.array([1.2, '2.1', 5.5]) # 형변환 주의
+        np.array([1.2, '2.1', 5.5], dtype='float') # dtype으로 형변환 명시
+
+    ```
+        2. 난수를 만드는 알고리즘을 돌리는 최초의 같은 값으로 고정해서 사용
+        
+    ```
+        import random  # 내장 파이썬
+
+        random.seed(3) # 코드셀에 같이 넣어주시는 게 값을 실제로 윗 셀과 같도록 하는 방법
+        random.randint(1, 100)
+
+    ```
+    ```
+        np.random.randint(1,2) # 넘파이 min <= x < max (2 절대 안나옴)
+
+        rng = np.random.default_rng(3) # 씨드 인스턴스
+        rng.integers(low=1, high=3, size=1) # 넘파이 min <= x < max
+
+    ```
