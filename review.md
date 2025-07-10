@@ -178,7 +178,9 @@ match 변수 or 값:
             super().__init__(*args, **kwargs)
     ```
 
-        4. 
+        4. @property : 동작(함수)를 값(변수)처럼 사용하게 하는 데코레이터
+        @get_pw.setter : @ property 의 짝궁인 setter
+    
         
 
 - **Result** – 결과
