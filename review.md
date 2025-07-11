@@ -199,7 +199,10 @@ match 변수 or 값:
                 - 상속이 되어야만 재정의 할 수 있다
                 - 상속받은 메소드와 동일한 이름이어야 함
 
-## 250710 데이터분석 1일차
+
+
+
+    ## 250710 데이터분석 1일차
 - **Situation** – 상황
     ***NumPy에 대한 학습***
 
@@ -275,3 +278,62 @@ match 변수 or 값:
         rng.integers(low=1, high=3, size=1) # 넘파이 min <= x < max
 
     ```
+
+## 250711 데이터분석 2일차
+- **Situation** – 상황
+    ***Pandas에 대한 학습***
+
+- **Task** – 과제
+아래 내용 관련 문제들 주말에 공부하기
+
+        1. Grouping Analysis
+
+        2. Melt
+
+        3. Pivot table
+
+        4. Function Apply
+
+
+- **Action** – 행동
+학습 내용 복습하기
+
+        1. 데이터프레임(dataframe)
+            - 엑셀과 같이, 인덱스(index), 변수(column), 값(value)로 이루어진 데이터 구조
+            - 판다스의 특수한 자료형
+            - 2차원 자료 구조, Series가 합쳐진 형태 (Series : 1차원 배열 자료 구조, 브로드캐스팅 가능, numpy로 연산되고 관리됨)
+
+        2. 파생변수: 이미 있는 데이터를 특정 컬럼의 조건에 따라 새로 알고싶은 형태로 파생시키는 것
+            - df['over25'] = df.나이 >= 25
+        3. del / drop (삭제)
+            - del df['over25']
+            - df.drop('지역', axis=1) # axis=0 행 / axis=1 열
+        4. df을 합치기 위한 명령어
+            1. merge : 중복 x, 추려서 합침
+            2. concat : 
+                - 행 기준 pd.concat(df, data)
+                - 열 기준 pd.concat((df, data), axis=1)
+                - 둘 다 가지고 있는 값만 추려서 리턴 pd.concat((df, data), join='inner')
+            3. join : 조건을 걸어서 합침
+    
+    
+
+- **Result** – 결과
+아래 내용을 배움
+
+        1. 기본 코드
+            1. data = pd.DataFrame(data)
+            2. data.info()
+                : 개발자가 확인해야 자료로서의 구조를 보여줌
+            3. data.describe(include='all')
+                : 수집된 자료들의 경향성을 보여주기 위한 대푯값
+            4. data.head(1) / data.tail(1)
+                : 앞의 5줄까지 출력 / 뒤에 5줄까지 출력
+
+        2. df2 = df.copy()
+            : numpy처럼 pandas의 copy()도 deepcopy
+        
+        3. loc은 label 값으로 접근하고 iloc은 index 기준으로 접근
+            - loc 시작인덱스 : 끝인덱스
+            - iloc 시작인덱스 : 끝인덱스값 + 1
+        4. 열, 행 으로 동작하는 판다스를 행, 열 순서로 동작하는 넘파이의 조건으로 가져오기 위해 loc사용
