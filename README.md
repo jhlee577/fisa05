@@ -409,7 +409,6 @@ match 변수 or 값:
 
         1. 미니 프로젝트 주제 선정 및 데이터 탐색
 
-
 - **Action** – 행동
 학습 내용 복습하기
 
@@ -446,9 +445,6 @@ match 변수 or 값:
 
         10. Maps
         
-    
-    
-
 - **Result** – 결과
 아래 내용을 배움
 
@@ -483,17 +479,63 @@ match 변수 or 값:
     ***데이터 활용 분석 및 시각화 진행 (데이터를 입력받고, 해당 데이터에 적합한 방식으로 시각화한다)***
 
 - **Task** – 과제
-streamlit application 구현
+1. 서울시 시민행복지수 통계 데이터 전처리(출처: 서울열린데이터광장)
+2. streamlit application 구현
+
+- **Action** – 행동
+1. GitHub 공용 repository 생성 및 branches 생성
+2. 2020~2024년도 서울시 자치구별, 항목별 행복지수 데이터 전처리
+3. Plotly로 그래프, 차트 생성(시계열 그래프, 레이더 차트)
+   1. 지역별 행복도 변화량(5개년) - 항목별 꺾은선 그래프(해당 지역의 2020~2024년도 행복 지수)
+   2. 원하는 자치구 행복지수 비교 - 레이더 차트를 통한 시각적 비교(항목별 5개년 평균 점수 사용)
+4. 삶의 만족도 5개 항목에 대한 중요에 따른 유사한 지역 추천 시스템
+
+- **Result** – 결과
+1. GitHub : (https://github.com/beening01/happy.git)
+2. Streamlit : (https://happy-disticts.streamlit.app/)
 
 
-        1. 미니 프로젝트 주제 선정 및 데이터 탐색
+
+## 250721 SQL 1일차
+- **Situation** – 상황
+    ***DBMS 기본 명령어 이해(DML, DDL, DCL, TCL)에 대한 학습***
+
+- **Task** – 과제
+아래 내용 주말까지 공부하기
+
+        1. 1. 2019년 1분기(QUARTER 함수 사용) 개봉 영화 중 관객수가 10만 이상인 영화의 월별, 영화 유형별 관객 소계를 구하는 쿼리
+        2. 2019년 개봉 영화 중 매출액이 천만 원 이상인 영화의 월별(MONTH), 영화 유형별 관객 소계를 구하되 7월 1일 전에 개봉한 영화이면 상반기, 7월 1일 이후에 개봉한 영화이면 하반기라고 함께 출력하는 쿼리
+        3. 부제가 있는 영화 찾기 ':' 2015년 이후의 개봉영화 중에서 부제가 달려있는 영화의 개수 세어보기
+        4. 감독이 두 명 이상이면 콤마(,)로 이어져 있습니다(예, ‘홍길동,김감독’). 감독이 1명이면 그대로, 두 명 이상이면 , 대신 , 값으로 대체해(예, ‘홍길동/김감독’) 출력하는 쿼리를 작성해 보세요.
 
 
 - **Action** – 행동
 학습 내용 복습하기
 
-        1. 
-        2. 
+        1. 데이터의 종류
+           - 정형 데이터(Tabular)
+           - 반정형 데이터
+           - 비정형 데이터
+
+        2. 데이터베이스
+            - Data Mart(DM, 데이터 마트)
+            - Data Warehouse(DW, 데이터 웨어하우스)
+            - Data Lake(DL, 데이터 레이크)
+ 
+        3. DML, DDL, DCL, TCL
+            - DML (Data Manipulation Language)
+            - DDL (Data Definition Language)
+            - DCL (Data Control Language)
+            - TCL (Transaction Control Language)
+        
+        4. 테이블의 제약 조건
+             1. `UNIQUE`
+                - 해당 열의 값은 중복되지 않아야 합니다.
+                - 예시: CREATE TABLE students (student_id INT UNIQUE, name VARCHAR(20), age INT);
+      
+             2. `CHECK`
+                - 해당 열의 값은 지정된 조건을 만족해야 합니다.
+                - 예시: CREATE TABLE students (name VARCHAR(20), age INT CHECK(age > 0));
         
     
     
@@ -501,5 +543,13 @@ streamlit application 구현
 - **Result** – 결과
 아래 내용을 배움
 
-        1. 
-        2. 
+        1. 표준 SQL에서 "스키마"라는 개념은 데이터베이스 내부의 논리적 네임스페이스를 의미합니다.  그러나 MySQL에서는 "데이터베이스"를 생성하면 디스크에 폴더가 생성됩니다. 해당 데이터베이스의 테이블은 해당 폴더 아래의 파일에 저장됩니다. MySQL은 논리적 스키마 계층과 물리적 데이터베이스 계층을 명확히 구분하지 않았으므로 "CREATE DATABASE"는 사실상 "CREATE SCHEMA"와 동일한 의미를 갖습니다. 
+
+        2. 데이터 조회
+           - SELECT 문을 쿼리(query)라고도 합니다
+  ```
+        SELECT *
+           FROM 테이블
+        WHERE 조회 조건;
+  ```
+
