@@ -405,13 +405,9 @@ match 변수 or 값:
     ***PLOTLY에 대한 학습***
 
 - **Task** – 과제
-아래 내용 주말까지 공부하기
+미니 프로젝트(데이터 활용 분석 및 시각화 진행)에서 EDA 실습하기
 
-        1. 
-        2. 
-        3. 
-        4. 
-
+        1. 미니 프로젝트 주제 선정 및 데이터 탐색
 
 
 - **Action** – 행동
@@ -424,15 +420,31 @@ match 변수 or 값:
               1. dict 형식으로 그리는 방법
                  : 가능은 하나 섬세하게 그래프를 그리려면 복잡하여 거의 쓰이지 않음
               2. Express를 통해서 그리는 방법
-                 : px를 통해 템플릿으로 그래프를 빠르게 그리기 가능
+                 : px를 통해 템플릿으로 그래프를 빠르게 그리기 가능 (https://plotly.com/python/plotly-express/)
               3. Graph_objects를 통해서 그리는 방법
-                 : 섬세한 커스터마이징이 가능, 그래프를 겹쳐그릴 수 있음
+                 : 섬세한 커스터마이징이 가능, 그래프를 겹쳐그릴 수 있음(https://plotly.com/python/reference/)
 
-        2. 
+        2. Scatter Plot
 
-        3. 
+        3. Line Chart
         
-        4. 
+        4. 시계열(Time Series) 그래프
+
+        5. Bar Charts
+           - 범주형 자료에 대한 카운팅, Category나 class에 대한 비교
+
+           - 순위형 자료에 대해 카운팅할 때
+
+           - 여러 범주형 변수에 대한 Overlay를 확인 가능
+        6. Histogram
+
+        7. Distribution Plot
+
+        8. Box Plot & Violin Plot
+
+        9. 트리맵
+
+        10. Maps
         
     
     
@@ -441,11 +453,24 @@ match 변수 or 값:
 아래 내용을 배움
 
         1. go.Figure
-data : 데이터에 관한 정보
-layout : 제목, 폰트, 축, 범례 등 레이아웃 설정 정보
-go.update_layout : fig에 레이아웃 추가 업데이트
-go.add_trace : fig에 시각요소 추가 삽입 (subplot, map, 추가 그래프 등)
-go.make_subplots : 다중 그래프 그리기
-        2. 
-        3. 
-        4. 
+           - data : 데이터에 관한 정보
+           - layout : 제목, 폰트, 축, 범례 등 레이아웃 설정 정보
+           - go.update_layout : fig에 레이아웃 추가 업데이트
+           - go.add_trace : fig에 시각요소 추가 삽입 (subplot, map, 추가 그래프 등)
+           - go.make_subplots : 다중 그래프 그리기
+        2. 데이터셋 불러와서 데이터 검토하기 위한 코드
+           - .info()
+           - .describe(include='all')
+           - .head()
+           - .tail()
+           - .unique()
+        3. Plotly Fundamentals
+           - 데이터 레이블
+           - 색상 차원
+           - 템플릿
+           - 구성
+           - 높이, 너비 및 여백 조정
+           - 눈금 형식 지정
+           - 글꼴, 제목, 범례 항목 및 축 제목 설정
+           - 축(Axes)
+           - 서브플롯(Subplots)
