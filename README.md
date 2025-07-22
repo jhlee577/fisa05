@@ -550,6 +550,7 @@ match 변수 or 값:
   ```
         SELECT *
            FROM 테이블
+        3. SQL은 1부터 시작(다른 언어는 0부터 시작)
         WHERE 조회 조건;
   ```
 
