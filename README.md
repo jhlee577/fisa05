@@ -34,6 +34,7 @@
    <summary>250703 파이썬 2일차</summary> 
 
 - **Situation** – 상황
+
 ***제어문[조건문, 반복문(while)]에 대한 학습***
 
 - **Task** – 과제
