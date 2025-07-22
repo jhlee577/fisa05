@@ -213,12 +213,13 @@ match 변수 or 값:
                 - 자식 클래스에서 부모에게 있던 메소드를 고쳐쓰는 법
                 - 상속이 되어야만 재정의 할 수 있다
                 - 상속받은 메소드와 동일한 이름이어야 함
+</details>
 
+<details> 
+   <summary>250710 데이터분석 1일차</summary> 
 
-
-
-    ## 250710 데이터분석 1일차
 - **Situation** – 상황
+
     ***NumPy에 대한 학습***
 
 - **Task** – 과제
@@ -293,9 +294,13 @@ match 변수 or 값:
         rng.integers(low=1, high=3, size=1) # 넘파이 min <= x < max
 
     ```
+</details>
 
-## 250711 데이터분석 2일차
+<details> 
+   <summary>250711 데이터분석 2일차</summary> 
+
 - **Situation** – 상황
+
     ***Pandas에 대한 학습***
 
 - **Task** – 과제
@@ -353,10 +358,13 @@ match 변수 or 값:
             - loc 시작인덱스 : 끝인덱스
             - iloc 시작인덱스 : 끝인덱스값 + 1
         4. 열, 행 으로 동작하는 판다스를 행, 열 순서로 동작하는 넘파이의 조건으로 가져오기 위해 loc사용
+</details>
 
+<details> 
+   <summary>250714 데이터시각화 1일차</summary> 
 
-## 250714 데이터시각화 1일차
 - **Situation** – 상황
+
     ***데이터분석 EDA, matplotlib, seaborn에 대한 학습***
 
 - **Task** – 과제
@@ -413,10 +421,13 @@ match 변수 or 값:
             1. Matplotlib을 기반으로 다양한 색상 테마와 통계용 차트 등의 기능을 추가한 시각화 패키지
             2.함수가 쉬우며 직관적으로 결과를 확인할 수 있음
             3.seaborn은 시각화용 패키지라서 결과를 직접 보여주지 않음
+</details>
 
-
-## 250715 데이터시각화 2일차
+<details> 
+   <summary>250715 데이터시각화 2일차</summary>
+   
 - **Situation** – 상황
+
     ***데이터 분석 방법론, EDA 기초, EDA를 위한 시각화 패키지(Matplotlib, Plotly)***
 
 - **Task** – 과제
@@ -485,12 +496,13 @@ match 변수 or 값:
            - 글꼴, 제목, 범례 항목 및 축 제목 설정
            - 축(Axes)
            - 서브플롯(Subplots)
+</details>
 
+<details> 
+   <summary>250716 ~ 250718 미니 프로젝트 및 발표(총 3일)</summary>
 
-
-
-## 250716 ~ 250718 미니 프로젝트 및 발표(총 3일)
 - **Situation** – 상황
+
     ***데이터 활용 분석 및 시각화 진행 (데이터를 입력받고, 해당 데이터에 적합한 방식으로 시각화한다)***
 
 - **Task** – 과제
@@ -508,11 +520,13 @@ match 변수 or 값:
 - **Result** – 결과
 1. GitHub : (https://github.com/beening01/happy.git)
 2. Streamlit : (https://happy-disticts.streamlit.app/)
+</details>
 
+<details> 
+   <summary>250721 SQL 1일차</summary>
 
-
-## 250721 SQL 1일차
 - **Situation** – 상황
+
     ***DBMS 기본 명령어 이해(DML, DDL, DCL, TCL)에 대한 학습***
 
 - **Task** – 과제
@@ -522,7 +536,6 @@ match 변수 or 값:
         2. 2019년 개봉 영화 중 매출액이 천만 원 이상인 영화의 월별(MONTH), 영화 유형별 관객 소계를 구하되 7월 1일 전에 개봉한 영화이면 상반기, 7월 1일 이후에 개봉한 영화이면 하반기라고 함께 출력하는 쿼리
         3. 부제가 있는 영화 찾기 ':' 2015년 이후의 개봉영화 중에서 부제가 달려있는 영화의 개수 세어보기
         4. 감독이 두 명 이상이면 콤마(,)로 이어져 있습니다(예, ‘홍길동,김감독’). 감독이 1명이면 그대로, 두 명 이상이면 , 대신 , 값으로 대체해(예, ‘홍길동/김감독’) 출력하는 쿼리를 작성해 보세요.
-
 
 - **Action** – 행동
 학습 내용 복습하기
@@ -552,13 +565,13 @@ match 변수 or 값:
                 - 해당 열의 값은 지정된 조건을 만족해야 합니다.
                 - 예시: CREATE TABLE students (name VARCHAR(20), age INT CHECK(age > 0));
         
-    
-    
 
 - **Result** – 결과
 아래 내용을 배움
 
-        1. 표준 SQL에서 "스키마"라는 개념은 데이터베이스 내부의 논리적 네임스페이스를 의미합니다.  그러나 MySQL에서는 "데이터베이스"를 생성하면 디스크에 폴더가 생성됩니다. 해당 데이터베이스의 테이블은 해당 폴더 아래의 파일에 저장됩니다. MySQL은 논리적 스키마 계층과 물리적 데이터베이스 계층을 명확히 구분하지 않았으므로 "CREATE DATABASE"는 사실상 "CREATE SCHEMA"와 동일한 의미를 갖습니다. 
+        1. 표준 SQL에서 "스키마"라는 개념은 데이터베이스 내부의 논리적 네임스페이스를 의미합니다.
+           그러나 MySQL에서는 "데이터베이스"를 생성하면 디스크에 폴더가 생성됩니다. 해당 데이터베이스의 테이블은 해당 폴더 아래의 파일에 저장됩니다.
+           MySQL은 논리적 스키마 계층과 물리적 데이터베이스 계층을 명확히 구분하지 않았으므로 "CREATE DATABASE"는 사실상 "CREATE SCHEMA"와 동일한 의미를 갖습니다.
 
         2. 데이터 조회
            - SELECT 문을 쿼리(query)라고도 합니다
@@ -574,12 +587,13 @@ match 변수 or 값:
         4. SQL은 1부터 시작(다른 언어는 0부터 시작)
 
         5. COUNT([DISTINCT] expr) 오류 주의하기
+</details>
 
+<details>
+   <summary>250722 SQL 2일차</summary>
 
-
-
-## 250722 SQL 2일차
 - **Situation** – 상황
+
     ***DBMS 심화 명령어 이해(서브 쿼리 및 집계 쿼리)에 대한 학습***
 
 - **Task** – 과제
@@ -595,7 +609,6 @@ match 변수 or 값:
         6. 모든 직원명(ename), 부서번호(deptno), 부서명(dname) 검색
            - 부서 테이블의 40번 부서와 조인할 사원 테이블의 부서 번호가 없지만, outer join 이용해서 40번 부서의 부서 이름도 검색하기 
 
-
 - **Action** – 행동
 학습 내용 복습하기
 
@@ -623,9 +636,6 @@ match 변수 or 값:
              2. `CHECK`
                 - 해당 열의 값은 지정된 조건을 만족해야 합니다.
                 - 예시: CREATE TABLE students (name VARCHAR(20), age INT CHECK(age > 0));
-        
-    
-    
 
 - **Result** – 결과
 아래 내용을 배움
@@ -646,3 +656,5 @@ match 변수 or 값:
         4. SQL은 1부터 시작(다른 언어는 0부터 시작)
 
         5. COUNT([DISTINCT] expr) 오류 주의하기
+
+  
