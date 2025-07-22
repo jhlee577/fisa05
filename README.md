@@ -615,49 +615,15 @@ match 변수 or 값:
 - **Action** – 행동
 학습 내용 복습하기
 
-        1. 데이터의 종류
-           - 정형 데이터(Tabular)
-           - 반정형 데이터
-           - 비정형 데이터
+        1. 
 
-        2. 데이터베이스
-            - Data Mart(DM, 데이터 마트)
-            - Data Warehouse(DW, 데이터 웨어하우스)
-            - Data Lake(DL, 데이터 레이크)
- 
-        3. DML, DDL, DCL, TCL
-            - DML (Data Manipulation Language)
-            - DDL (Data Definition Language)
-            - DCL (Data Control Language)
-            - TCL (Transaction Control Language)
-        
-        4. 테이블의 제약 조건
-             1. `UNIQUE`
-                - 해당 열의 값은 중복되지 않아야 합니다.
-                - 예시: CREATE TABLE students (student_id INT UNIQUE, name VARCHAR(20), age INT);
-      
-             2. `CHECK`
-                - 해당 열의 값은 지정된 조건을 만족해야 합니다.
-                - 예시: CREATE TABLE students (name VARCHAR(20), age INT CHECK(age > 0));
+
 
 - **Result** – 결과
 아래 내용을 배움
 
-        1. 표준 SQL에서 "스키마"라는 개념은 데이터베이스 내부의 논리적 네임스페이스를 의미합니다.  그러나 MySQL에서는 "데이터베이스"를 생성하면 디스크에 폴더가 생성됩니다. 해당 데이터베이스의 테이블은 해당 폴더 아래의 파일에 저장됩니다. MySQL은 논리적 스키마 계층과 물리적 데이터베이스 계층을 명확히 구분하지 않았으므로 "CREATE DATABASE"는 사실상 "CREATE SCHEMA"와 동일한 의미를 갖습니다. 
+        1. 
 
-        2. 데이터 조회
-           - SELECT 문을 쿼리(query)라고도 합니다
-  ```
-        SELECT *
-           FROM 테이블
-        WHERE 조회 조건;
-  ```
 
-        3. 집계 쿼리
-           - 판다스의 groupby()와 같은 기능
-  
-        4. SQL은 1부터 시작(다른 언어는 0부터 시작)
-
-        5. COUNT([DISTINCT] expr) 오류 주의하기
 
   
