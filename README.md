@@ -558,3 +558,5 @@ match 변수 or 값:
   
         4. SQL은 1부터 시작(다른 언어는 0부터 시작)
 
+        5. COUNT([DISTINCT] expr) 오류 주의하기
+
