@@ -1,6 +1,5 @@
-## 250702 파이썬 1일차
-<details> ## 250702 파이썬 1일차
-   <summary>접기/펼치기</summary> 
+<details> 
+   <summary>250702 파이썬 1일차</summary> 
 
    - **Situation** – 상황
     ***변수, 연산자, 데이터타입(자료의 형태)에 대한 학습***
