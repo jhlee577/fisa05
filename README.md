@@ -1,4 +1,7 @@
 <details> 
+   <summary>250702 ~ 250704 1주차</summary>
+
+<details> 
    <summary>250702 파이썬 1일차</summary> 
 
    - **Situation** – 상황
@@ -72,7 +75,7 @@ match 변수 or 값:
 <u>개인사정으로 독학</u>
 - 파이썬 기초 2 제어문 ~ 기초 3 데코레이터
  </details>
-
+</details>
 <details> 
    <summary>250707 파이썬 4일차</summary> 
 
