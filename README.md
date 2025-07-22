@@ -520,22 +520,6 @@ match 변수 or 값:
         2. 데이터베이스
             - Data Mart(DM, 데이터 마트)
             - Data Warehouse(DW, 데이터 웨어하우스)
-            - Data 
-
-
-
-
-- **Action** – 행동
-학습 내용 복습하기
-
-        1. 데이터의 종류
-           - 정형 데이터(Tabular)
-           - 반정형 데이터
-           - 비정형 데이터
-
-        2. 데이터베이스
-            - Data Mart(DM, 데이터 마트)
-            - Data Warehouse(DW, 데이터 웨어하우스)
             - Data Lake(DL, 데이터 레이크)
  
         3. DML, DDL, DCL, TCL
@@ -595,22 +579,6 @@ match 변수 or 값:
             -RIGHT JOIN 사용
         6. 모든 직원명(ename), 부서번호(deptno), 부서명(dname) 검색
            - 부서 테이블의 40번 부서와 조인할 사원 테이블의 부서 번호가 없지만, outer join 이용해서 40번 부서의 부서 이름도 검색하기 
-
-
-- **Action** – 행동
-학습 내용 복습하기
-
-        1. 데이터의 종류
-           - 정형 데이터(Tabular)
-           - 반정형 데이터
-           - 비정형 데이터
-
-        2. 데이터베이스
-            - Data Mart(DM, 데이터 마트)
-            - Data Warehouse(DW, 데이터 웨어하우스)
-            - Data 
-
-
 
 
 - **Action** – 행동
