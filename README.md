@@ -668,22 +668,32 @@ match 변수 or 값:
 
 - **Situation** – 상황
 
-    ***데이터베이스 설계 이해, ER 다이어그램 작성 방법에 대한 학습***
+    ***데이터베이스 제약조건(INTEGRITY) 및 인덱스(INDEX)에 대한 심화 학습 진행***
 
-- **Task** – 과제
-아래 내용 주말까지 공부하기
+- **Task** – 과제  
+아래 내용을 주말까지 복습 및 개념 정리하기
 
-        1. 
+        1. 제약조건 종류(PK, FK, UNIQUE, NOT NULL, DEFAULT, CHECK 등)
+        2. 제약조건 설정 방법 (CREATE 시 / ALTER 시)
+        3. ON DELETE / ON UPDATE 옵션 (CASCADE, SET NULL, NO ACTION)
+        4. 인덱스(Index)의 개념 및 사용법
+        5. PRIMARY INDEX vs CLUSTER INDEX vs SECONDARY INDEX 비교
 
-- **Action** – 행동
-학습 내용 복습하기
+- **Action** – 행동  
+학습 내용을 바탕으로 복습 및 실습 SQL 실행
 
-        1. 
+        1. `emp`, `dept`, `salgrade` 테이블을 활용하여 다양한 제약조건 실습
+        2. `emp01`, `tbl1~tbl5` 등 실습용 테이블 생성 및 인덱스 설정/삭제 실습
+        3. INFORMATION_SCHEMA를 통해 제약조건 및 인덱스 조회
+        4. 클러스터/보조 인덱스 적용 후 정렬 및 조회 방식 비교
 
+- **Result** – 결과  
+아래 개념을 명확히 이해하고 실습을 통해 적용함
 
-- **Result** – 결과
-아래 내용을 배움
-
-        1. 
+        1. 제약조건은 데이터 무결성을 보장하며, 상황에 맞는 제약조건 선택이 중요함
+        2. 외래키 설정 시 `ON DELETE`/`ON UPDATE` 옵션에 따라 자식 테이블 반응이 다름
+        3. INDEX는 검색 성능 향상에 유용하나, 잦은 변경이 있는 컬럼에는 비추천
+        4. PRIMARY KEY는 자동으로 인덱스를 생성하며, UNIQUE도 인덱스를 포함함
+        5. CLUSTERED INDEX는 데이터 저장 순서에 영향, SECONDARY는 별도 구조에서 관리됨
 
 </details>
