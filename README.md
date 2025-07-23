@@ -632,13 +632,18 @@ match 변수 or 값:
 - **Action** – 행동
 학습 내용 복습하기
 
-        1. JOIN (조인)
-            - INNER JOIN
-            - LEFT OUTER JOIN
-            - RIGHT OUTER JOIN
-            - FULL OUTER JOIN
-            - CROSS JOIN
+        1. JOIN (조인) : 다수의 table 간에 공통된 데이터(컬럼단위)를 기준으로 조회하는 명령어
+            - 동등조인('=')
+              : 테이블에서 같은 조건이 존재할 경우 값 검색,
+                 조인하는 두 테이블에 중복된 컬럼명이 있으면 컬럼이 속한 테이블을 명시해야 함
+            - not-equi 조인
+              : 100% 일치하지 않고 특정 범위내의 데이터 조인시에 사용,
+		            between ~ and(비교 연산자)
+            - OUTER JOIN (RIGHT OUTER JOIN, LEFT OUTER JOIN, FULL OUTER JOIN)
+              : 두 개 이상 테이블 조인, 조인 조건이 불충분해도 검색 가능하게 하는 조인,
+                 특정 데이터가 모든 테이블에 존재하지 않고 컬럼은 존재하나 null값을 보유한 경우 검색되지 않는 문제를 해결하기 위해 사용되는 조인
             - SELF JOIN
+              : 동일 테이블 내에서 상이한 칼럼 참조 ( emp의 empno[사번]과 mgr[사번] 관계)
 
 
 - **Result** – 결과
