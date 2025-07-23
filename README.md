@@ -645,6 +645,8 @@ match 변수 or 값:
             - SELF JOIN
               : 동일 테이블 내에서 상이한 칼럼 참조 ( emp의 empno[사번]과 mgr[사번] 관계)
 
+         2. SQL의 동작순서: FROM -> WHERE -> (GROUP BY -> HAVING) -> SELECT -> ORDER BY -> LIMIT
+
 
 - **Result** – 결과
 아래 내용을 배움
