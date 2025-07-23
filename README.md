@@ -542,158 +542,114 @@ match 변수 or 값:
 <details> 
    <summary>250721 ~ 250725 4주차</summary>
 
-<details> 
+<details>
    <summary>250721 SQL 1일차</summary>
 
 - **Situation** – 상황
 
-    ***DBMS 기본 명령어 이해(DML, DDL, DCL, TCL)에 대한 학습***
+    ***SQL 기초 문법과 기본 SELECT 문 및 GROUP BY, 조건문 등을 중심으로 학습***  
+    *(참고 파일: `완_01_sql연습.sql`)*
 
-- **Task** – 과제
-아래 내용 주말까지 공부하기
+- **Task** – 과제  
+아래 SQL 쿼리를 직접 작성하여 동작 방식 이해하기
 
-        1. 1. 2019년 1분기(QUARTER 함수 사용) 개봉 영화 중 관객수가 10만 이상인 영화의 월별, 영화 유형별 관객 소계를 구하는 쿼리
-        2. 2019년 개봉 영화 중 매출액이 천만 원 이상인 영화의 월별(MONTH), 영화 유형별 관객 소계를 구하되 7월 1일 전에 개봉한 영화이면 상반기, 7월 1일 이후에 개봉한 영화이면 하반기라고 함께 출력하는 쿼리
-        3. 부제가 있는 영화 찾기 ':' 2015년 이후의 개봉영화 중에서 부제가 달려있는 영화의 개수 세어보기
-        4. 감독이 두 명 이상이면 콤마(,)로 이어져 있습니다(예, ‘홍길동,김감독’). 감독이 1명이면 그대로, 두 명 이상이면 , 대신 , 값으로 대체해(예, ‘홍길동/김감독’) 출력하는 쿼리를 작성해 보세요.
+        1. 2019년 1분기 개봉 영화 중 관객수 10만 이상인 영화의 월별/유형별 관객 소계
+        2. 상/하반기 구분 후, 매출 천만 이상 영화의 월별/유형별 관객 소계
+        3. 부제가 있는 영화 개수 (':' 포함)
+        4. 감독이 2명 이상일 때 쉼표(,) → 슬래시(/)로 바꾸어 출력
 
-- **Action** – 행동
-학습 내용 복습하기
+- **Action** – 행동  
+기초 SQL 명령어와 데이터 형식, DB 개념 복습
 
-        1. 데이터의 종류
-           - 정형 데이터(Tabular)
-           - 반정형 데이터
-           - 비정형 데이터
+        1. SQL 언어 구조 이해 (DML, DDL, DCL, TCL)
+        2. SELECT ~ FROM ~ WHERE 기본 구문 실습
+        3. 집계 함수 및 GROUP BY, ORDER BY 실습
+        4. WHERE절에서의 다양한 조건문 사용
+        5. DISTINCT, COUNT 함수 오류 주의사항 확인
 
-        2. 데이터베이스
-            - Data Mart(DM, 데이터 마트)
-            - Data Warehouse(DW, 데이터 웨어하우스)
-            - Data Lake(DL, 데이터 레이크)
+- **Result** – 결과  
 
-        3. DML, DDL, DCL, TCL
-            - DML (Data Manipulation Language)
-            - DDL (Data Definition Language)
-            - DCL (Data Control Language)
-            - TCL (Transaction Control Language)
-        
-        4. 테이블의 제약 조건
-             1. `UNIQUE`
-                - 해당 열의 값은 중복되지 않아야 합니다.
-                - 예시: CREATE TABLE students (student_id INT UNIQUE, name VARCHAR(20), age INT);
-      
-             2. `CHECK`
-                - 해당 열의 값은 지정된 조건을 만족해야 합니다.
-                - 예시: CREATE TABLE students (name VARCHAR(20), age INT CHECK(age > 0));
-        
+        1. SQL은 인덱스가 1부터 시작하며, SELECT 쿼리의 순서 및 문법 구조를 익힘
+        2. 스키마(schema)와 데이터베이스(database)의 차이(MySQL에서는 유사)
+        3. 데이터 웨어하우스, 데이터 마트, 레이크의 개념 정리
+        4. 정형/반정형/비정형 데이터 유형 이해
+        5. GROUP BY로 집계 시, SELECT 절에 포함된 컬럼 규칙 이해
 
-- **Result** – 결과
-아래 내용을 배움
-
-        1. 표준 SQL에서 "스키마"라는 개념은 데이터베이스 내부의 논리적 네임스페이스를 의미합니다.
-           그러나 MySQL에서는 "데이터베이스"를 생성하면 디스크에 폴더가 생성됩니다. 해당 데이터베이스의 테이블은 해당 폴더 아래의 파일에 저장됩니다.
-           MySQL은 논리적 스키마 계층과 물리적 데이터베이스 계층을 명확히 구분하지 않았으므로 "CREATE DATABASE"는 사실상 "CREATE SCHEMA"와 동일한 의미를 갖습니다.
-
-        2. 데이터 조회
-           - SELECT 문을 쿼리(query)라고도 합니다
-  ```
-        SELECT *
-           FROM 테이블
-        WHERE 조회 조건;
-  ```
-
-        3. 집계 쿼리
-           - 판다스의 groupby()와 같은 기능
-
-        4. SQL은 1부터 시작(다른 언어는 0부터 시작)
-
-        5. COUNT([DISTINCT] expr) 오류 주의하기
 </details>
+
 
 <details>
    <summary>250722 SQL 2일차</summary>
 
 - **Situation** – 상황
 
-    ***DBMS 심화 명령어 이해(서브 쿼리 및 집계 쿼리)에 대한 학습***
+    ***테이블 간 관계를 탐색하기 위한 다양한 JOIN과 서브쿼리 학습***  
+    *(참고 파일: `완_02_JOIN.sql`, `완_03_subquery.sql`)*
 
-- **Task** – 과제
-아래 내용 주말까지 공부하기
+- **Task** – 과제  
+다양한 JOIN과 서브쿼리 실습 문제 해결
 
-        1. 조인을 사용해서 뉴욕('NEW YORK')에 근무하는 사원의 이름(ename)과 급여(sal)를 검색 
-        2. 사원(emp) 테이블의 부서 번호(deptno)로 부서 테이블(dept)을 참조하여 사원명(ename), 부서번호(deptno), 부서의 이름(dname) 검색
-        3. SMITH와 동일한 부서에서 근무하는 사원의 이름 검색 (단, SMITH 이름은 제외하면서 검색)
-        4. 모든 사원명, 매니저 명 검색, INNER JOIN은 두 테이블 컬럼에 모두 있어야만 출력. NULL인 값은 조회하지 않습니다
-        5. 모든 사원명(KING포함), 매니저 명 검색, 단 매니저가 없는 사원(KING)도 검색되어야 함
-            -LEFT JOIN 사용
-            -RIGHT JOIN 사용
-        6. 모든 직원명(ename), 부서번호(deptno), 부서명(dname) 검색
-           - 부서 테이블의 40번 부서와 조인할 사원 테이블의 부서 번호가 없지만, outer join 이용해서 40번 부서의 부서 이름도 검색하기 
+        1. NEW YORK 근무 사원의 이름과 급여 조회
+        2. emp와 dept를 조인해 사원명, 부서명 조회
+        3. SMITH와 동일한 부서 사원 조회 (SMITH 제외)
+        4. 사원-매니저 INNER JOIN / 매니저가 NULL인 경우 포함한 LEFT JOIN
+        5. 40번 부서도 결과에 포함되는 OUTER JOIN 작성
+        6. 급여 등급(salgrade) 조인을 통한 등급 확인
 
-- **Action** – 행동
-학습 내용 복습하기
+- **Action** – 행동  
+JOIN 및 서브쿼리 활용 실습
 
-        1. JOIN (조인) : 다수의 table 간에 공통된 데이터(컬럼단위)를 기준으로 조회하는 명령어
-            - 동등조인('=')
-              : 테이블에서 같은 조건이 존재할 경우 값 검색,
-                 조인하는 두 테이블에 중복된 컬럼명이 있으면 컬럼이 속한 테이블을 명시해야 함
-            - not-equi 조인
-              : 100% 일치하지 않고 특정 범위내의 데이터 조인시에 사용,
-		            between ~ and(비교 연산자)
-            - OUTER JOIN (RIGHT OUTER JOIN, LEFT OUTER JOIN, FULL OUTER JOIN)
-              : 두 개 이상 테이블 조인, 조인 조건이 불충분해도 검색 가능하게 하는 조인,
-                 특정 데이터가 모든 테이블에 존재하지 않고 컬럼은 존재하나 null값을 보유한 경우 검색되지 않는 문제를 해결하기 위해 사용되는 조인
-            - SELF JOIN
-              : 동일 테이블 내에서 상이한 칼럼 참조 ( emp의 empno[사번]과 mgr[사번] 관계)
+        1. EQUI JOIN, NON-EQUI JOIN, OUTER JOIN, SELF JOIN 구조 익힘
+        2. FROM 절에 서브쿼리(파생 테이블), SELECT 절 스칼라 서브쿼리 실습
+        3. WHERE 절의 서브쿼리에 ANY, ALL, SOME 연산자 적용 방법 확인
+        4. 다중 조인 시 테이블 별칭(alias) 및 ON 조건 활용법 숙지
+        5. SQL의 동작순서: FROM -> WHERE -> (GROUP BY -> HAVING) -> SELECT -> ORDER BY -> LIMIT
 
-         2. SQL의 동작순서: FROM -> WHERE -> (GROUP BY -> HAVING) -> SELECT -> ORDER BY -> LIMIT
+- **Result** – 결과  
 
-
-- **Result** – 결과
-아래 내용을 배움
-
-        1. 서브쿼리 : 쿼리 안에 쿼리
-  		- JOIN 으로 할 수 있지만, 조건에 맞는 값을 먼저 추려서 다른 테이블과 비교하기 때문에 속도면에서 우월
-  		- 서브쿼리로 리턴한 테이블은 원본과 전혀 다른 별도의 임시테이블로 간주 
-  		1. 스칼라 서브쿼리 : 결과가 하나의 값으로 도출(SELECT 절에는 스칼라 서브쿼리만 쓸 수 있음)
-  		2. FROM 절에서의 서브쿼리 : 파생(derived) 서브쿼리
-
-  		3. 3. WHERE절의 서브쿼리 : 비교 연산자 또는 ANY(~ 중 하나), SOME(하나라도 있으면), ALL(모두) 연산자를 사용하기도 함
-			- ANY, SOME : 서브쿼리의 결과값 중 하나라도 만족하면 참
-			- ALL : 서브쿼리의 결과값 모두 만족해야 참 / 하나 이상의 값으로 비교연산자
+        1. INNER JOIN은 공통 컬럼이 양쪽 테이블에 존재할 때만 결과 출력
+        2. OUTER JOIN은 NULL도 포함되므로 데이터 유실 방지 가능
+        3. SELF JOIN은 한 테이블 내부 관계 탐색에 매우 효과적
+        4. 서브쿼리는 복잡한 조건 분리 시 가독성과 성능 개선에 유리
+        5. 서브쿼리 위치에 따라 사용 가능한 연산자가 다름을 이해
 
 </details>
+
 
 <details>
    <summary>250723 SQL 3일차</summary>
 
 - **Situation** – 상황
 
-    ***데이터베이스 제약조건(INTEGRITY) 및 인덱스(INDEX)에 대한 심화 학습 진행***
+    ***DML(INSERT/UPDATE/DELETE), 제약조건(INTEGRITY), 인덱스(INDEX) 등 실무 활용 중심 학습***  
+    *(참고 파일: `완_04_DML-.sql`, `완_05_INTEGRITY-.sql`, `완_06_index-.sql`)*
 
 - **Task** – 과제  
-아래 내용을 주말까지 복습 및 개념 정리하기
+실제 데이터 삽입/수정/삭제 및 성능 튜닝 실습
 
-        1. 제약조건 종류(PK, FK, UNIQUE, NOT NULL, DEFAULT, CHECK 등)
-        2. 제약조건 설정 방법 (CREATE 시 / ALTER 시)
-        3. ON DELETE / ON UPDATE 옵션 (CASCADE, SET NULL, NO ACTION)
-        4. 인덱스(Index)의 개념 및 사용법
-        5. PRIMARY INDEX vs CLUSTER INDEX vs SECONDARY INDEX 비교
+        1. emp01 테이블 생성 및 다양한 INSERT 방식 실습
+        2. UPDATE/DELETE와 TRANSACTION(트랜잭션) 처리 연습
+        3. PK, FK, UNIQUE, CHECK 등 제약조건 추가 및 삭제 실습
+        4. ON DELETE / ON UPDATE 옵션의 동작 방식 확인
+        5. INDEX 생성/삭제 및 성능 비교
 
 - **Action** – 행동  
-학습 내용을 바탕으로 복습 및 실습 SQL 실행
+테이블 생성부터 인덱스까지 전체 흐름 실습
 
-        1. `emp`, `dept`, `salgrade` 테이블을 활용하여 다양한 제약조건 실습
-        2. `emp01`, `tbl1~tbl5` 등 실습용 테이블 생성 및 인덱스 설정/삭제 실습
-        3. INFORMATION_SCHEMA를 통해 제약조건 및 인덱스 조회
-        4. 클러스터/보조 인덱스 적용 후 정렬 및 조회 방식 비교
+        1. INSERT 구문: 전체 칼럼 vs 특정 칼럼 입력 실습
+        2. UPDATE 구문: 조건절 포함, 연산 포함, JOIN 기반 수정
+        3. DELETE vs TRUNCATE 비교 실습
+        4. 트랜잭션(SAVEPOINT, ROLLBACK, COMMIT) 흐름 테스트
+        5. PRIMARY KEY와 FOREIGN KEY 설정 및 조회
+        6. CREATE INDEX / DROP INDEX 명령어 실습
 
 - **Result** – 결과  
-아래 개념을 명확히 이해하고 실습을 통해 적용함
 
-        1. 제약조건은 데이터 무결성을 보장하며, 상황에 맞는 제약조건 선택이 중요함
-        2. 외래키 설정 시 `ON DELETE`/`ON UPDATE` 옵션에 따라 자식 테이블 반응이 다름
-        3. INDEX는 검색 성능 향상에 유용하나, 잦은 변경이 있는 컬럼에는 비추천
-        4. PRIMARY KEY는 자동으로 인덱스를 생성하며, UNIQUE도 인덱스를 포함함
-        5. CLUSTERED INDEX는 데이터 저장 순서에 영향, SECONDARY는 별도 구조에서 관리됨
+        1. DML 명령어는 COMMIT을 기준으로 반영/취소 가능
+        2. 제약조건을 통해 데이터 무결성 확보 (예: NULL 제한, 참조 무결성)
+        3. ON DELETE CASCADE는 부모 삭제 시 자식 데이터 자동 삭제됨
+        4. 인덱스는 검색 속도를 높이지만 INSERT/UPDATE 성능에는 영향을 줄 수 있음
+        5. 클러스터형 인덱스는 실제 데이터 정렬까지 변경함, 보조 인덱스는 별도 구조로 관리됨
 
 </details>
+
