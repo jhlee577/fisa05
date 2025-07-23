@@ -75,7 +75,12 @@ match 변수 or 값:
 <u>개인사정으로 독학</u>
 - 파이썬 기초 2 제어문 ~ 기초 3 데코레이터
  </details>
+ 
 </details>
+
+
+<details> 
+   <summary>250707 ~ 250711 2주차</summary>
 <details> 
    <summary>250707 파이썬 4일차</summary> 
 
@@ -363,6 +368,12 @@ match 변수 or 값:
         4. 열, 행 으로 동작하는 판다스를 행, 열 순서로 동작하는 넘파이의 조건으로 가져오기 위해 loc사용
 </details>
 
+</details>
+
+
+<details> 
+   <summary>250714 ~ 250718 3주차</summary>
+   
 <details> 
    <summary>250714 데이터시각화 1일차</summary> 
 
