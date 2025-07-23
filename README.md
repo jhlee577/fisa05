@@ -632,8 +632,13 @@ match 변수 or 값:
 - **Action** – 행동
 학습 내용 복습하기
 
-        1. 
-
+        1. JOIN (조인)
+            - INNER JOIN
+            - LEFT OUTER JOIN
+            - RIGHT OUTER JOIN
+            - FULL OUTER JOIN
+            - CROSS JOIN
+            - SELF JOIN
 
 
 - **Result** – 결과
