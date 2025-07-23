@@ -550,7 +550,7 @@ match 변수 or 값:
     ***DBMS 기본 명령어 이해(DML, DDL, DCL, TCL)에 대한 학습***
 
 - **Task** – 과제
-아래 내용 주말까지 공부하기
+아래 내용 내일까지 공부하기
 
         1. 1. 2019년 1분기(QUARTER 함수 사용) 개봉 영화 중 관객수가 10만 이상인 영화의 월별, 영화 유형별 관객 소계를 구하는 쿼리
         2. 2019년 개봉 영화 중 매출액이 천만 원 이상인 영화의 월별(MONTH), 영화 유형별 관객 소계를 구하되 7월 1일 전에 개봉한 영화이면 상반기, 7월 1일 이후에 개봉한 영화이면 하반기라고 함께 출력하는 쿼리
@@ -570,54 +570,7 @@ match 변수 or 값:
             - Data Warehouse(DW, 데이터 웨어하우스)
             - Data Lake(DL, 데이터 레이크)
  
-        3. DML, DDL, DCL, TCL
-            - DML (Data Manipulation Language)
-            - DDL (Data Definition Language)
-            - DCL (Data Control Language)
-            - TCL (Transaction Control Language)
-        
-        4. 테이블의 제약 조건
-             1. `UNIQUE`
-                - 해당 열의 값은 중복되지 않아야 합니다.
-                - 예시: CREATE TABLE students (student_id INT UNIQUE, name VARCHAR(20), age INT);
-      
-             2. `CHECK`
-                - 해당 열의 값은 지정된 조건을 만족해야 합니다.
-                - 예시: CREATE TABLE students (name VARCHAR(20), age INT CHECK(age > 0));
-        
-
-- **Result** – 결과
-아래 내용을 배움
-
-        1. 표준 SQL에서 "스키마"라는 개념은 데이터베이스 내부의 논리적 네임스페이스를 의미합니다.
-           그러나 MySQL에서는 "데이터베이스"를 생성하면 디스크에 폴더가 생성됩니다. 해당 데이터베이스의 테이블은 해당 폴더 아래의 파일에 저장됩니다.
-           MySQL은 논리적 스키마 계층과 물리적 데이터베이스 계층을 명확히 구분하지 않았으므로 "CREATE DATABASE"는 사실상 "CREATE SCHEMA"와 동일한 의미를 갖습니다.
-
-        2. 데이터 조회
-           - SELECT 문을 쿼리(query)라고도 합니다
-  ```
-        SELECT *
-           FROM 테이블
-        WHERE 조회 조건;
-  ```
-
-        3. 집계 쿼리
-           - 판다스의 groupby()와 같은 기능
-  
-        4. SQL은 1부터 시작(다른 언어는 0부터 시작)
-
-        5. COUNT([DISTINCT] expr) 오류 주의하기
-</details>
-
-<details>
-   <summary>250722 SQL 2일차</summary>
-
-- **Situation** – 상황
-
-    ***DBMS 심화 명령어 이해(서브 쿼리 및 집계 쿼리)에 대한 학습***
-
-- **Task** – 과제
-아래 내용 주말까지 공부하기
+        3. DML, DDL, DC일까지 공부하기
 
         1. 조인을 사용해서 뉴욕('NEW YORK')에 근무하는 사원의 이름(ename)과 급여(sal)를 검색 
         2. 사원(emp) 테이블의 부서 번호(deptno)로 부서 테이블(dept)을 참조하여 사원명(ename), 부서번호(deptno), 부서의 이름(dname) 검색
