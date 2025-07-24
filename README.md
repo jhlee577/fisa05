@@ -653,3 +653,44 @@ JOIN 및 서브쿼리 활용 실습
 *(학습 파일: `04_DML-.sql`, `05_INTEGRITY-.sql`, `06_index-.sql`)*
 </details>
 
+<details>
+  <summary>250724 SQL 4일차</summary>
+
+- **Situation** – 상황  
+
+    ***VIEW, WINDOW FUNCTION, Stored Procedure, Trigger에 대한 실습***  
+    *(Stored Procedure와 Trigger는 아직 개념 수준의 이해)*
+
+- **Task** – 과제  
+VIEW와 WINDOW FUNCTION을 활용한 데이터 조회/분석,  
+Stored Procedure·Trigger 기본 개념 및 작성법 체험
+
+        1. VIEW 생성/삭제 및 DML 영향 확인
+        2. 단일 테이블/조인 기반 VIEW 실습
+        3. WINDOW FUNCTION으로 순위, 누적합, 이동평균 등 실습
+        4. Stored Procedure 기본 작성·호출 개념 학습
+        5. Trigger의 동작 구조와 예제 코드 개념 학습
+
+- **Action** – 행동  
+VIEW와 WINDOW FUNCTION의 다양한 활용 실습,  
+Stored Procedure와 Trigger는 예제 중심으로 코드 작성 방식 파악
+
+        1. CREATE VIEW / DROP VIEW 명령어 실습
+        2. View를 통한 UPDATE·INSERT 시 원본 테이블 영향 확인
+        3. RANK, DENSE_RANK, ROW_NUMBER 실습
+        4. FIRST_VALUE, LAST_VALUE, LAG, LEAD 등으로 데이터 비교
+        5. PERCENT_RANK, CUME_DIST, NTILE로 비율/그룹 분석
+        6. Stored Procedure와 Function 작성법과 CALL 사용법 확인
+        7. Trigger의 BEFORE/AFTER, OLD/NEW 개념 파악 및 예제 코드 분석
+
+- **Result** – 결과  
+
+        1. View를 통해 컬럼 은닉과 조인 결과를 간편하게 재사용 가능
+        2. View에서의 DML은 원본 테이블의 제약조건을 그대로 따름
+        3. Window Function으로 순위, 집계, 비율 등 다양한 분석 가능
+        4. Stored Procedure는 반복 쿼리를 묶어 효율적으로 실행 가능
+        5. Trigger는 DML 이벤트 발생 시 자동으로 후속 작업 실행 가능
+
+*(학습 파일: `07_VIEW+WINDOWFUNCTION-.sql`, `08_STOREDPROCEDURE+TRIGGER-.sql`)*
+</details>
+
