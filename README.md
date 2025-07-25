@@ -1,5 +1,5 @@
 <details> 
-   <summary>250702 ~ 250704 1주차</summary>
+   <summary>📌250702 ~ 250704 1주차</summary>
 
 <details> 
    <summary>250702 파이썬 1일차</summary> 
@@ -80,7 +80,7 @@ match 변수 or 값:
 
 
 <details> 
-   <summary>250707 ~ 250711 2주차</summary>
+   <summary>📌250707 ~ 250711 2주차</summary>
 <details> 
    <summary>250707 파이썬 4일차</summary> 
 
@@ -372,7 +372,7 @@ match 변수 or 값:
 
 
 <details> 
-   <summary>250714 ~ 250718 3주차</summary>
+   <summary>📌250714 ~ 250718 3주차</summary>
    
 <details> 
    <summary>250714 데이터시각화 1일차</summary> 
@@ -540,7 +540,7 @@ match 변수 or 값:
 
 
 <details> 
-   <summary>250721 ~ 250725 4주차</summary>
+   <summary>📌250721 ~ 250725 4주차</summary>
 
 <details>
    <summary>250721 SQL 1일차</summary>
