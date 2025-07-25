@@ -695,5 +695,60 @@ Stored Procedure와 Trigger는 예제 중심으로 코드 작성 방식 파악
 *(학습 파일: `07_VIEW+WINDOWFUNCTION-.sql`, `08_STOREDPROCEDURE+TRIGGER-.sql`)*
 </details>
 
+<details>
+  <summary>250725 SQL 5일차</summary>
+
+- **Situation – 상황**  
+  팀 단위로 **`movies` 테이블 정규화 실습**을 진행하고,  
+  `VIEW`, `WINDOW FUNCTION`을 활용한 데이터 조회/분석을 실습했으며,  
+  `Stored Procedure`, `Trigger`는 개념 수준에서 예제 코드를 분석했습니다.  
+  또한 첨부한 ERD(erdcloud 제작)와 `09_partition.sql` 파일을 참고하여 **파티션 실습**도 진행했습니다.
+
+
+- **Task – 과제**  
+  1. `movies` 테이블 정규화 및 다대다 관계 테이블 설계
+  2. VIEW 생성/삭제 및 DML 영향 확인
+  3. WINDOW FUNCTION으로 순위·누적합·이동평균 실습
+  4. Stored Procedure 작성/호출 개념 학습
+  5. Trigger 동작 구조 및 예제 코드 학습
+  6. RANGE 파티션을 이용한 `movies_p` 테이블 성능 비교
+
+
+- **Action – 행동**  
+  - **정규화/ERD**  
+    - `movies`를 중심으로 Movie_Productions, Movie_Distributor, Movie_Importers 등 N:M 관계 테이블 설계  
+    - erdcloud를 활용해 ERD 작성  
+  - **VIEW 실습**  
+    - `CREATE VIEW`, `DROP VIEW` 명령어 실습  
+    - VIEW 기반으로 UPDATE·INSERT 시 원본 테이블에 미치는 영향 확인  
+  - **WINDOW FUNCTION 실습**  
+    - `RANK`, `DENSE_RANK`, `ROW_NUMBER` 로 순위 분석  
+    - `FIRST_VALUE`, `LAST_VALUE`, `LAG`, `LEAD` 로 이전/다음 값 비교  
+    - `PERCENT_RANK`, `CUME_DIST`, `NTILE` 로 비율 및 그룹 분석  
+  - **Stored Procedure / Trigger**  
+    - Stored Procedure 작성과 `CALL` 사용법 파악  
+    - Trigger의 `BEFORE`, `AFTER`, `OLD`, `NEW` 개념과 예제 코드 분석  
+  - **Partition 실습**  
+    - `movies_p` 테이블을 생성 후 RANGE 파티션 적용  
+    - `EXPLAIN`을 통해 조건별 쿼리 성능 차이 확인
+
+
+- **Result – 결과**  
+  - 정규화로 `movies` 데이터의 중복을 줄이고 관리 용이성 확보  
+  - VIEW를 통해 컬럼 은닉과 조인 결과를 간단히 재사용 가능  
+  - VIEW 기반 DML은 원본 테이블의 제약조건을 그대로 따름을 확인  
+  - WINDOW FUNCTION으로 순위, 집계, 비율 등의 다양한 분석이 가능함을 체감  
+  - Stored Procedure로 반복 쿼리의 재사용성과 유지보수성 향상 가능성 확인  
+  - Trigger로 DML 이벤트 시 자동 후속 작업 수행 가능함을 이해  
+  - RANGE 파티션을 통해 특정 범위 데이터만 스캔하여 성능 향상 가능함을 확인
+
+
+**학습 파일**  
+- `07_VIEW+WINDOWFUNCTION-.sql`  
+- `08_STOREDPROCEDURE+TRIGGER-.sql`  
+- `09_partition.sql`  
+- ERD: *erdcloud로 작성한 이미지 첨부*
+</details>
+
 
 
