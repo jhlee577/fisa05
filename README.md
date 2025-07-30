@@ -782,5 +782,47 @@ Notion 자료 기반으로 핵심 명령어와 옵션의 기능을 정리하고
 
 </details>
 
+<details>
+  <summary>250728 Docker 2일차</summary>
+
+- **Situation** – 상황  
+
+    ***Docker의 이미지 구조, 컨테이너 라이프사이클, Dockerfile 작성법을 학습***  
+    *(Notion 문서: 03~05-Docker 학습 완료)*
+
+- **Task** – 과제  
+Docker의 내부 작동 원리를 이해하고,  
+이미지 생성 → 컨테이너 실행 → 상태 확인 및 삭제까지의 흐름을 실습.  
+또한 Dockerfile을 활용해 사용자 정의 이미지를 빌드하고 실행.
+
+        1. Docker 이미지의 계층 구조와 read-only 원리 학습
+        2. 컨테이너 상태 변화 (running, stopped 등) 이해
+        3. 컨테이너 로그/파일 시스템 확인 및 복사 방법 실습
+        4. Dockerfile 작성법과 주요 명령어 (`FROM`, `WORKDIR`, `COPY`, `CMD`) 학습
+        5. Dockerfile 기반 이미지 빌드 및 실행
+
+
+- **Action** – 행동
+Docker CLI 및 Dockerfile을 활용해 실습 중심으로 명령어 사용법과 이미지 구조를 학습
+
+        1. docker history 명령으로 이미지 레이어 구조 확인
+        2. docker diff 명령으로 컨테이너 변경 내역 추적
+        3. docker logs / cp 명령으로 컨테이너 내부 정보 접근 실습
+        4. Dockerfile에 FROM, WORKDIR, COPY, EXPOSE, CMD 등을 정의하여 이미지 생성
+        5. docker build -t 커스텀 이미지 생성 후 run 명령으로 컨테이너 실행
+        6. EXPOSE된 포트를 -p 옵션으로 연결하여 웹 애플리케이션 확인
+
+
+- **Result** – 결과  
+
+        1. 이미지의 레이어 구조 및 컨테이너의 read/write 방식에 대한 이해 향상
+        2. 컨테이너의 상태 및 로그를 CLI로 확인하는 법을 익힘
+        3. Dockerfile을 통해 반복적인 컨테이너 설정을 자동화 가능하다는 점 체감
+        4. 커스텀 이미지를 직접 빌드하고 실행함으로써 Docker 개발 흐름을 전체적으로 이해
+        5. 실무에서 Docker를 사용한 환경 배포, 이식성 확보, 반복 설정 자동화의 가능성을 인식함
+
+
+</details>
+
 
 
