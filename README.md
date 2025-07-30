@@ -783,7 +783,7 @@ Notion 자료 기반으로 핵심 명령어와 옵션의 기능을 정리하고
 </details>
 
 <details>
-  <summary>250728 Docker 2일차</summary>
+  <summary>250729 Docker 2일차</summary>
 
 - **Situation** – 상황  
 
@@ -821,6 +821,46 @@ Docker CLI 및 Dockerfile을 활용해 실습 중심으로 명령어 사용법�
         4. 커스텀 이미지를 직접 빌드하고 실행함으로써 Docker 개발 흐름을 전체적으로 이해
         5. 실무에서 Docker를 사용한 환경 배포, 이식성 확보, 반복 설정 자동화의 가능성을 인식함
 
+</details>
+
+<details>
+  <summary>250730 Docker 3일차 GitHub 교육</summary>
+
+- **Situation** – 상황  
+
+    ***GitHub 기반 협업 절차 실습 및 Docker에서의 Container 간 통신과 Docker Compose 학습***  
+    *(깃허브 특강 자료, Notion 문서: 06-Docker 학습 완료)*
+
+- **Task** – 과제  
+Git의 기초 명령어부터 원격 저장소를 활용한 협업 방식까지 실습하고,  
+Docker에서는 단일 컨테이너를 넘어서 여러 컨테이너 간의 통신,  
+복합 서비스 구성 도구인 Docker Compose를 학습
+
+        1. Git 설치, GitHub 가입 및 토큰 생성
+        2. 로컬 저장소 생성, 커밋(add, commit), push/pull 실습
+        3. 원격 저장소에서 브랜치 전략, PR(Merge) 실습
+        4. 컨테이너 간 기본 네트워크 구조 학습
+        5. bridge 네트워크에서 서비스 간 통신 실습
+        6. Docker Compose로 여러 컨테이너 구성 및 실행
+
+- **Action** – 행동
+CLI 및 GUI(Sourcetree)를 활용해 Git과 GitHub의 기본 흐름을 체험하고,  
+Docker Compose 파일 작성 및 실행을 통해 실제 서비스 연동을 경험
+
+        1. GitHub Personal Access Token 생성 및 Sourcetree에 연동
+        2. 로컬 Git 저장소에서 add → commit → push 순으로 반영
+        3. 원격 브랜치 생성 및 PR(Merge) 시나리오 실습
+        4. Docker 기본 네트워크 구조(bridge, host 등) 학습
+        5. docker-compose.yml 파일 작성
+        6. `docker compose up -d`로 멀티컨테이너 환경 실행
+
+- **Result** – 결과  
+
+        1. Git의 기본 명령어와 GitHub의 협업 흐름을 실제로 체험
+        2. 브랜치 전략과 Merge 절차를 통해 협업의 구조 이해
+        3. GitHub Issues, Projects, PR을 통한 팀 기반 개발 흐름 감각 익힘
+        4. 컨테이너 간 네트워크 구조와 통신 방식에 대한 이해 확보
+        5. Docker Compose로 멀티 컨테이너 서비스를 손쉽게 구성할 수 있음을 확인
 
 </details>
 
