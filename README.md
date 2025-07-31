@@ -824,7 +824,7 @@ Docker CLI 및 Dockerfile을 활용해 실습 중심으로 명령어 사용법�
 </details>
 
 <details>
-  <summary>250730 Docker 3일차 GitHub 교육</summary>
+  <summary>250730 Docker 3일차, GitHub 교육</summary>
 
 - **Situation** – 상황  
 
@@ -864,5 +864,31 @@ Docker Compose 파일 작성 및 실행을 통해 실제 서비스 연동을 경
 
 </details>
 
+<details>
+  <summary>250730 Docker 4일차, Linux 1일차</summary>
 
+- **Situation** – 상황  
+
+    ***Docker에서의 Container 설계 및 Linux 기본 개념 학습***  
+    *(Notion 문서: 07-Docker 학습 완료, Linux 자료 학습 중)*
+
+- **Task** – 과제  
+
+          1. Dockerfile을 통한 컨테이너 설계 방법 학습  
+          2. Linux의 커널, 셸, 터미널 구조에 대한 개념 이해
+          3. CLI 조작법 및 사용자 권한 관리 명령어 실습
+
+- **Action** – 행동
+
+         1. Dockerfile 작성 규칙 및 베스트 프랙티스를 참고하여 이미지 빌드 실습  
+         2. Linux의 핵심 구성요소인 커널, 셸, 터미널의 역할과 상호작용 방식 정리  
+         3. 사용자 전환(`su`, `sudo`), 셸 교체(`sh`, `bash`), 커맨드 히스토리 검색 등 실습 수행 
+
+- **Result** – 결과  
+
+         1. 명령어 실행의 흐름(입력 → 셸 → 커널 → 출력)을 구조적으로 이해함  
+         2. Docker에서 이미지 구성 요소를 최적화하는 설계 능력을 습득함  
+         3. 리눅스의 사용자 권한 체계 및 커맨드 라인 효율적 활용법(탭 자동완성, Ctrl 조합키 등)을 실습을 통해 체득함  
+
+</details>
 
