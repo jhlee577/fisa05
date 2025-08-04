@@ -931,7 +931,7 @@ Docker Compose 파일 작성 및 실행을 통해 실제 서비스 연동을 경
 - **Situation** – 상황  
 
     **리눅스 셸 스크립트 및 환경 설정 학습**  
-    *(셸 특수문자, 리다이렉션, 변수/조건문/반복문, vi 사용법, crontab 설정 등 실습 중심)*
+    *(셸 특수문자, 변수/조건문/반복문, vi 사용법, crontab 설정 등 실습 중심)*
 
 - **Task** – 과제  
 
@@ -945,14 +945,20 @@ Docker Compose 파일 작성 및 실행을 통해 실제 서비스 연동을 경
       2. `touch`, `rm`, `echo`, `grep`, `cp` 등을 이용한 특수문자 실습 수행  
       3. `crontab -e` 명령으로 정기 작업 등록 및 `/tmp/cron.result`에 결과 저장 확인  
 
-```bash
-# 실습 1: .conf 확장자 파일을 backup 디렉토리로 복사
-$ mkdir backup
-$ cp /etc/*.conf backup/
+```
+# 실습 1: 실행시 my_string이라는 변수에 파라미터로 값을 입력받고, my_string을, 비어있으면 'empty'를 출력하는 파일 mystring.sh 를 작성
 
-# 실습 2: crontab 설정 - 매주 수요일 오전 10시 40분 df -h 결과 저장
-$ crontab -e
-40 10 * * 3 /usr/bin/df -h > /tmp/cron.result
+echo "값을 입력하세요"
+read my_string
+
+if [ -n "$my_string" ]
+then
+        echo "$my_string"
+else
+        echo "empty"
+fi
+
+exit 0;
 ```
 
 - **Result** – 결과  
