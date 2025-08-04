@@ -865,7 +865,7 @@ Docker Compose 파일 작성 및 실행을 통해 실제 서비스 연동을 경
 </details>
 
 <details>
-  <summary>250730 Docker 4일차, Linux 1일차</summary>
+  <summary>250731 Docker 4일차, Linux 1일차</summary>
 
 - **Situation** – 상황  
 
@@ -889,6 +889,67 @@ Docker Compose 파일 작성 및 실행을 통해 실제 서비스 연동을 경
          1. 명령어 실행의 흐름(입력 → 셸 → 커널 → 출력)을 구조적으로 이해함  
          2. Docker에서 이미지 구성 요소를 최적화하는 설계 능력을 습득함  
          3. 리눅스의 사용자 권한 체계 및 커맨드 라인 효율적 활용법(탭 자동완성, Ctrl 조합키 등)을 실습을 통해 체득함  
+
+</details>
+
+<details>
+  <summary>250801 Linux 2일차</summary>
+
+- **Situation** – 상황  
+
+    ***Linux 시스템을 활용해 업무를 수행, 운영, 관리 방법 학습***  
+    *(Notion 문서: Linux 자료 학습 중)*
+
+- **Task** – 과제  
+
+          1. 
+          2. 
+          3. 
+
+- **Action** – 행동
+
+         1.  
+         2.  
+         3. 
+
+- **Result** – 결과  
+
+         1. 
+         2. 
+         3.
+
+</details>
+
+</details>
+
+<details> 
+   <summary>📌250804 ~ 250808 6주차</summary>
+
+<details>
+  <summary>250804 Linux 3일차</summary>
+
+- **Situation** – 상황  
+
+    ***Linux 학습***  
+    *(Notion 문서: Linux 자료 학습 중)*
+
+- **Task** – 과제  
+
+          1. 
+          2. 
+          3. 
+
+- **Action** – 행동
+
+         1.  
+         2.  
+         3. 
+
+- **Result** – 결과  
+
+         1. 
+         2. 
+         3.
 
 </details>
 
