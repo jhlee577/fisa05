@@ -969,4 +969,29 @@ exit 0;
 
 </details>
 
+<details>
+  <summary>250805 Linux 4일차</summary>
+
+- **Situation** – 상황  
+
+    **리눅스 셸 스크립트 및 환경 설정 학습**  
+    *(셸 특수문자, 변수/조건문/반복문, vi 사용법, crontab 설정 등 실습 중심)*
+
+- **Task** – 과제  
+
+      1. 
+
+- **Action** – 행동
+
+      1. 
+```
+
+```
+
+- **Result** – 결과  
+
+
+
+</details>
+
 
