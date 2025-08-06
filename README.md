@@ -852,7 +852,7 @@ Docker Compose 파일 작성 및 실행을 통해 실제 서비스 연동을 경
         3. 원격 브랜치 생성 및 PR(Merge) 시나리오 실습
         4. Docker 기본 네트워크 구조(bridge, host 등) 학습
         5. docker-compose.yml 파일 작성
-        6. `docker compose up -d`로 멀티컨테이너 환경 실행
+        6. docker compose up -d로 멀티컨테이너 환경 실행
 
 - **Result** – 결과  
 
@@ -882,7 +882,7 @@ Docker Compose 파일 작성 및 실행을 통해 실제 서비스 연동을 경
 
          1. Dockerfile 작성 규칙 및 베스트 프랙티스를 참고하여 이미지 빌드 실습  
          2. Linux의 핵심 구성요소인 커널, 셸, 터미널의 역할과 상호작용 방식 정리  
-         3. 사용자 전환(`su`, `sudo`), 셸 교체(`sh`, `bash`), 커맨드 히스토리 검색 등 실습 수행 
+         3. 사용자 전환(su, sudo), 셸 교체(sh, bash), 커맨드 히스토리 검색 등 실습 수행 
 
 - **Result** – 결과  
 
@@ -902,16 +902,17 @@ Docker Compose 파일 작성 및 실행을 통해 실제 서비스 연동을 경
 
 - **Task** – 과제  
 
-       1. 리눅스의 주요 디렉터리(`/bin`, `/etc`, `/home` 등) 역할 파악  
+       1. 리눅스의 주요 디렉터리(/bin, /etc, /home 등) 역할 파악  
        2. 파일 생성/이동/복사/삭제 등 파일 시스템 명령어 실습  
-       3. `man`, `help`, `whatis`, `grep`, `find`, `ln`, `awk` 등의 활용법 익히기  
+       3. man, help, whatis, grep, find, ln, awk 등의 활용법 익히기
+
 
 - **Action** – 행동  
 
-       1. `/etc`, `/usr`, `/var` 등 디렉토리의 역할과 구조 학습  
-       2. `ls`, `pwd`, `cd`, `mkdir`, `cp`, `mv`, `rm`, `touch` 등 파일 조작 명령 반복 실습  
-       3. `cat`, `less`, `head`, `tail`, `grep`, `awk`를 조합해 실전 파일 검색 및 가공 수행  
-       4. `ln`을 통한 하드링크, 소프트링크 실습 및 `visudo` 설정 파일 관리 실습 진행
+       1. /etc, /usr, /var 등 디렉토리의 역할과 구조 학습  
+      2. ls, pwd, cd, mkdir, cp, mv, rm, touch 등 파일 조작 명령 반복 실습  
+      3. cat, less, head, tail, grep, awk를 조합해 실전 파일 검색 및 가공 수행  
+      4. ln을 통한 하드링크, 소프트링크 실습 및 visudo 설정 파일 관리 실습 진행
 
 - **Result** – 결과  
 
@@ -935,18 +936,18 @@ Docker Compose 파일 작성 및 실행을 통해 실제 서비스 연동을 경
 
 - **Task** – 과제  
 
-      1. `~/.bashrc`, `~/.profile`, `/etc/profile`의 차이 이해 및 설정 실습  
-      2. 셸 특수문자(`*`, `?`, `[]`, `;`, `"`, `'`, `` ` `` 등) 실습  
-      3. 리다이렉션(`>`, `>>`, `2>`), 명령어 치환(`$(date)`), crontab 자동 실행 설정  
+      1. ~/.bashrc, ~/.profile, /etc/profile의 차이 이해 및 설정 실습  
+      2. 셸 특수문자(*, ?, [], ;, ", ', $(date) 등) 실습  
+      3. 리다이렉션(>, >>, 2>), 명령어 치환($(date)), crontab 자동 실행 설정
 
 - **Action** – 행동
 
-      1. `.bashrc`와 `.profile`의 실행 시점을 비교하고 각각 실습  
-      2. `touch`, `rm`, `echo`, `grep`, `cp` 등을 이용한 특수문자 실습 수행  
-      3. `crontab -e` 명령으로 정기 작업 등록 및 `/tmp/cron.result`에 결과 저장 확인  
+      1. .bashrc와 .profile의 실행 시점을 비교하고 각각 실습  
+      2. touch, rm, echo, grep, cp 등을 이용한 특수문자 실습 수행  
+      3. crontab -e 명령으로 정기 작업 등록 및 /tmp/cron.result에 결과 저장 확인  
 
 ```
-# 실습 1: 실행시 my_string이라는 변수에 파라미터로 값을 입력받고, my_string을, 비어있으면 'empty'를 출력하는 파일 mystring.sh 를 작성
+# 실습 1: 실행시 my_string이라는 변수에 파라미터로 값을 입력받고, my_string을, 비어있으면 empty를 출력하는 파일 mystring.sh 를 작성
 
 echo "값을 입력하세요"
 read my_string
@@ -965,7 +966,7 @@ exit 0;
 
        1. 사용자 초기화 파일의 실행 조건과 적용 범위에 대한 실질적 이해  
        2. 셸 특수문자와 쿼팅(escaping)의 실제 동작 방식 체득  
-       3. crontab을 이용해 시스템 자동 작업 스케줄링 실습 완료 (`df -h`, weather API 등)
+       3. crontab을 이용해 시스템 자동 작업 스케줄링 실습 완료 (df -h, weather API 등)
 
 </details>
 
