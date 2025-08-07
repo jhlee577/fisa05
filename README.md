@@ -992,7 +992,7 @@ exit 0;
 - **Result** – 결과  
 
       1. Github Action을 활용한 크론잡 실습
-        - 깃허브 실습 : [fisa05-weather-api]<https://github.com/jhlee577/fisa05-weather-api.git>
+- 깃허브 실습 결과 : [fisa05-weather-api]<https://github.com/jhlee577/fisa05-weather-api.git>
 
 </details>
 
