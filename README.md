@@ -998,11 +998,11 @@ exit 0;
 </details>
 
 <details>
-  <summary>250806 Elasticsearch 1일차</summary>
+  <summary>250806 Linux 5일차, Elasticsearch 1일차</summary>
 
 - **Situation** – 상황  
 
-    **- ELK Stack 개념 이해 및 환경 구축, 데이터 수집 파이프라인 실습**
+    ** 데이터 수집 파이프라인 실습, ELK Stack 개념 이해 및 환경 구축**
 
 - **Task** – 과제  
 
@@ -1023,6 +1023,37 @@ exit 0;
 - 자동 음악 추천 프로젝트 실습 결과 : [fisa05-music-api](https://github.com/jhlee577/fisa05-music-api.git)
 - 크론잡 실습2 결과 : [fisa05-weather-api2](https://github.com/jhlee577/fisa05-weather-api2.git)
 </details>
+
+<details>
+  <summary>250807 Elasticsearch 2일차</summary>
+
+- **Situation** – 상황  
+
+    **엘라스틱서치 API 활용 기초(검색 쿼리 구현)**
+
+- **Task** – 과제  
+
+      1. match, match_phrase, term, terms, bool 쿼리 실습을 통해 문서 검색 동작 확인
+      2. 'my_bulk' 인덱스에 다양한 메시지를 저장한 후, 복합 쿼리 실습 수행  
+         - google이 포함된 문서 검색  
+         - "Chrome Google" 순서 검색  
+         - pink 포함 + blue 동시 포함 시 가중치  
+         - pink 포함 + blue 동시 포함 but 점수 영향 없이  
+         - "하늘사" 유무 상관없이 google, chrome 포함 문서 검색  
+         - "하늘사" 제외 + chrome 포함 문서 검색 (filter 활용)
+
+- **Action** – 행동
+
+      1. match/match_phrase/term/terms 쿼리를 활용해 단어, 문장, 정확 일치 여부 확인
+      2. bool 쿼리의 must, should, must_not, filter를 조합하여 복합 검색 쿼리 구현 및 점수 조절 방식 실습
+
+- **Result** – 결과  
+
+      1. 검색 API의 다양한 방식에 따른 결과 차이점과 용도 구분 능력 습득
+      2. 검색 조건을 구성하는 쿼리 DSL의 기본 구조와 응용 방식 이해
+  
+</details>
+
 
 
 
