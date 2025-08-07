@@ -992,8 +992,35 @@ exit 0;
 - **Result** – 결과  
 
       1. Github Action을 활용한 크론잡 실습
+      2. Workflow, Event, Job, Step, Action, Runner 단계로 크론잡 실습
 - 깃허브 실습 결과 : [fisa05-weather-api](https://github.com/jhlee577/fisa05-weather-api.git)
 
 </details>
+
+<details>
+  <summary>250806 Elasticsearch 1일차</summary>
+
+- **Situation** – 상황  
+
+    **- ELK Stack 개념 이해 및 환경 구축, 데이터 수집 파이프라인 실습**
+
+- **Task** – 과제  
+
+      1. 데이터 파이프라인 만들기 위해 오픈 API 사용해서 깃허브에 프로젝트 생성 실습
+
+- **Action** – 행동
+
+      1. 
+      2. Elasticsearch, kibana 환경 구축
+      3. 
+
+- **Result** – 결과  
+
+      1. Github 데이터 파이프라인 실습
+- 깃허브 실습 결과 : [fisa05-music-api](https://github.com/jhlee577/fisa05-music-api.git)
+
+</details>
+
+
 
 
