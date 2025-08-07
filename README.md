@@ -1006,19 +1006,22 @@ exit 0;
 
 - **Task** – 과제  
 
-      1. 데이터 파이프라인 만들기 위해 오픈 API 사용해서 깃허브에 프로젝트 생성 실습
+      1. Github Action을 활용하고, OpenWeather API 사용한 크론잡 실습2
+      2. 데이터 파이프라인 만들기 위해 오픈 API 사용해서 깃허브에 프로젝트 생성 실습
+  
 
 - **Action** – 행동
 
-      1. 
-      2. Elasticsearch, kibana 환경 구축
-      3. 
+      1. Python 코드 작성, GitHub Actions 워크플로우 작성, GitHub Secrets 설정 후 크론잡 동작
+      2. iTunes Search API를 활용해 랜덤 음악을 추천하고, GitHub Actions를 통해 1시간마다 자동으로 README.md에 추천 내용을 업데이트
+      3. Elasticsearch, kibana 환경 구축
 
 - **Result** – 결과  
 
       1. Github 데이터 파이프라인 실습
-- 깃허브 실습 결과 : [fisa05-music-api](https://github.com/jhlee577/fisa05-music-api.git)
-
+      2. Github Action을 활용한 크론잡 실습2
+- 자동 음악 추천 프로젝트 실습 결과 : [fisa05-music-api](https://github.com/jhlee577/fisa05-music-api.git)
+- 크론잡 실습2 결과 : [fisa05-weather-api2](https://github.com/jhlee577/fisa05-weather-api2.git)
 </details>
 
 
