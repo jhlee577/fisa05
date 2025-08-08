@@ -1054,7 +1054,26 @@ exit 0;
   
 </details>
 
+<details>
+  <summary>250808 Elasticsearch 3일차</summary>
 
+- **Situation** – 상황  
+
+    **엘라스틱서치 API 활용 기초(시각화)**
+
+- **Task** – 과제  
+
+      1. 
+
+- **Action** – 행동
+
+      1. 
+
+- **Result** – 결과  
+
+      1. 
+  
+</details>
 
 
 
